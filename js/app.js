@@ -1,3 +1,5 @@
+'use strict'
+
 var name = prompt('Hello, what is your name?');
 alert('Hi '+ name + ', welcome to my website, would you please answer my questions, just to get to know me');
 
