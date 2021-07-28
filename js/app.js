@@ -3,7 +3,7 @@
 var name = prompt('Hello, what is your name?');
 alert('Hi '+ name + ', welcome to my website, would you please answer my questions, just to get to know me');
 let counter = 0;
-
+function guessHobby(){
 let hobby = (prompt('Do I love swimming?')).toLowerCase();
 if(hobby=="yes"||hobby=="no"||hobby=="y"||hobby=="n"){
 switch (hobby){
@@ -23,7 +23,9 @@ switch (hobby){
 } else{
     alert("please, enter only yes, no, y, or n");
 }
+}
 
+function guessDessert(){
 let favDessert = (prompt('Is cake my favourit dessert?').toLowerCase());
 if(favDessert=="yes"||favDessert=="no"||favDessert=="y"||favDessert=="n"){
 switch (favDessert){
@@ -41,7 +43,9 @@ switch (favDessert){
             alert("You are right, I like kunafa more");
 }
 } else {alert("please, enter only yes, no, y, or n");}
+}
 
+function guessDream(){
 let dream = (prompt('Am i going to become a professional programmer?').toLowerCase());
 if(dream=="yes"||dream=="no"||dream=="y"||dream=="n"){
 switch (dream){
@@ -59,7 +63,9 @@ switch (dream){
             alert("What you recommend to bocme one, you can tell me on alk20489@gmail.com");
 }
 }else {alert("please, enter only yes, no, y, or n");}
+}
 
+function guessMovie(){
 let favMovie = (prompt('Is The Lord of The Rings my favourit movie?').toLowerCase());
 if(favMovie=="yes"||favMovie=="no"||favMovie=="y"||favMovie=="n"){
 switch (favMovie){
@@ -77,7 +83,9 @@ switch (favMovie){
             alert("There Will Be Blood is my favourit");
 }
 }else {alert("please, enter only yes, no, y, or n");}
+}
 
+function guessDestination(){
 let travel = (prompt('Do I wish to see the deep oceans?').toLowerCase());
 if(travel=="yes"||travel=="no"||travel=="y"||travel=="n"){
 switch (travel){
@@ -95,11 +103,14 @@ switch (travel){
             alert("You must be kidding, it must be great to see");
 }
 }else {alert("please, enter only yes, no, y, or n");}
+}
 
 // lab03
 
 //game1
+function guessNumber(){
 alert("now we will play a game");
+
 let guessNumber = Number (prompt("guess the secret number?"));
 for (let i=0; i<3; i++)
 {
@@ -108,10 +119,10 @@ alert("too high");
 }else if(guessNumber<4)
 {
 alert("too low");
-}else if(guessNumber===4){
+}else if(guessNumber==4){
     alert("congrats, you win");
     counter++;
-    i=3;
+    break;
     // console.log('you are correct');
 }else{
     alert('please enter a number')
@@ -129,9 +140,12 @@ alert ("you lose, the secret number is 4")
 
 }
 }
+}
 
 // game2
+function guessHobbies(){
 alert("lets play another game");
+
 let hobbies = ['swimming','reading','video games'];
 let guessHobby = prompt('what is my hobby?')
 
@@ -164,3 +178,12 @@ i=5;
 }
 }
 alert('my hobbies are swimming, reading, and video games'+' your total score is '+counter);
+}
+
+guessHobby();
+guessDessert();
+guessDream();
+guessMovie();
+guessDestination();
+guessNumber();
+guessHobbies();
