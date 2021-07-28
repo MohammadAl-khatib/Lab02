@@ -100,32 +100,33 @@ switch (travel){
 
 //game1
 alert("now we will play a game");
-let guessNumber = prompt("guess the secret number?");
+let guessNumber = Number (prompt("guess the secret number?"));
 for (let i=0; i<3; i++)
 {
 if(guessNumber>4){
 alert("too high");
-guessNumber = prompt("guess again");
 }else if(guessNumber<4)
 {
 alert("too low");
-guessNumber = prompt("guess again");
-}else{
+}else if(guessNumber===4){
     alert("congrats, you win");
     counter++;
     i=3;
     // console.log('you are correct');
- 
+}else{
+    alert('please enter a number')
 }
-if (i==2 && guessNumber==4)
+guessNumber = prompt("guess again");
+if (i==2 && guessNumber===4)
 {
 alert ("congrats, you win")
 // console.log('you are correct');
 counter++;
 }
-if (i==2 && guessNumber!=4)
+if (i==2 && guessNumber!==4)
 {
 alert ("you lose, the secret number is 4")
+
 }
 }
 
