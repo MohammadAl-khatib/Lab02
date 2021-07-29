@@ -50,3 +50,9 @@ ol li {
   text-decoration-color: #595260;
   font-size: 30px ;
 }
+footer ul li{
+float: left;
+margin: 5px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+list-style-type: none;
+}
