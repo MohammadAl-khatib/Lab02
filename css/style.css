@@ -10,11 +10,11 @@ header ul {
     background-color: #333333;
   }
   
-  header li {
+header li {
     float: right;
   }
   
-  header li a {
+header li a {
     display: block;
     color: white;
     text-align: center;
@@ -28,17 +28,17 @@ header li a:hover {
 h1{
       text-align: center;
   }
-  h3{
+h3{
       background-color: #7b00ff;
       color: white;
       display:block;
       padding:20px
 
   }
-  body{
+body{
       background-color: #EEEEEE;
   }
-  img{
+img{
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -56,3 +56,14 @@ margin: 5px;
 font-family: Georgia, 'Times New Roman', Times, serif;
 list-style-type: none;
 }
+footer li a{
+  text-decoration: none;
+}
+/* ol :nth-child(even){
+  margin: 40px;
+  float: right; */
+/* } */
+/* ol :nth-child(odd){
+
+   float: left; */
+/* } */
